@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1900px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-image: url('imagens/header_img.png');
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+}
+
+.img_star {
+    position: absolute;
+    top: 53%;
+    left: 17%;
+}
+
+.img_star img {
+    width: 270px;
+}
+
+.img_kylo {
+    position: relative;
+    width: 65%;
+    top: 4px;
+    left: 10%;
+    z-index: 10;
+}
+
+.img_kylo img {
+    width: 100%;
+    height: 700px;
+}
+
+.img_wars {
+    position: absolute;
+    top: 53%;
+    right: 13%;
+}
+
+.img_wars img {
+    width: 298px;
+}
+
+.img_legiao {
+    position: absolute;
+    top: 68%;
+    right: 15%;
+}
+
+.img_legiao img {
+    width: 110px;
+}
