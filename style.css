@@ -1,60 +1,119 @@
+/* Configurações Globais */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    max-width: 1900px;
-}
+/* Configuração da Header */
 
 header {
     width: 100%;
-    display: flex;
-    background-image: url('imagens/header_img.png');
+    background-image: url(imagens/header_img.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: 100% 600px;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
 }
 
+@media (max-width: 1201px){
+    header {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1201px){
+    header {
+        height: 400px;
+    }
+}
+
+/* Imagem Star */
+
 .img_star {
-    position: absolute;
-    top: 53%;
-    left: 17%;
+    width: 430px;
+    position: relative;
+    left: 25%;
+    margin-top: 120px;
 }
 
 .img_star img {
-    width: 270px;
+    width: 100%
 }
 
+@media (max-width: 1028px){
+    .img_star{
+        margin-top: 80px;
+    }
+}
+
+/* Imagem Kylo */
+
 .img_kylo {
+    width: 1850px;
+    height: 730px;
     position: relative;
-    width: 65%;
-    top: 4px;
-    left: 10%;
+    right: 5%;
+    margin-top: 120px;
     z-index: 10;
 }
 
 .img_kylo img {
     width: 100%;
-    height: 700px;
+    height: 100%;
 }
 
+@media (max-width: 1201px){
+    .img_kylo {
+        height: 630px;
+    }
+}
+
+@media (max-width: 1028px){
+    .img_kylo {
+        height: 530px;
+        margin-top: 80px;
+    }
+}
+
+/* Imagem Wars */
+
 .img_wars {
-    position: absolute;
-    top: 53%;
-    right: 13%;
+    width: 460px;
+    position: relative;
+    right: 18%;
+    margin-top: 120px;
 }
 
 .img_wars img {
-    width: 298px;
+    width: 100%;
 }
 
+@media (max-width: 1028px){
+    .img_wars {
+        margin-top: 80px;
+    }
+}
+
+/* Imagem Legião */
+
 .img_legiao {
-    position: absolute;
-    top: 68%;
-    right: 15%;
+    position: relative;
+    right: 20%;
+    width: 200px;
+    align-self: flex-end;
+    margin-bottom: 10px;
 }
 
 .img_legiao img {
-    width: 110px;
+    width: 100%;
 }
+
+@media (max-width: 1028px){
+    
+}
+
+/* Início da Main */
