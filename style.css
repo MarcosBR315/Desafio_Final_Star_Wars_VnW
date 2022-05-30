@@ -1,9 +1,12 @@
 /* Configurações Globais */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Configuração da Header */
@@ -34,9 +37,9 @@ header {
 /* Imagem Star */
 
 .img_star {
-    width: 430px;
+    width: 530px;
     position: relative;
-    left: 25%;
+    left: 22%;
     margin-top: 120px;
 }
 
@@ -53,10 +56,10 @@ header {
 /* Imagem Kylo */
 
 .img_kylo {
-    width: 1850px;
+    width: 2850px;
     height: 730px;
     position: relative;
-    right: 5%;
+    right: 2%;
     margin-top: 120px;
     z-index: 10;
 }
@@ -82,9 +85,9 @@ header {
 /* Imagem Wars */
 
 .img_wars {
-    width: 460px;
+    width: 560px;
     position: relative;
-    right: 18%;
+    right: 15%;
     margin-top: 120px;
 }
 
@@ -102,7 +105,7 @@ header {
 
 .img_legiao {
     position: relative;
-    right: 20%;
+    right: 17%;
     width: 200px;
     align-self: flex-end;
     margin-bottom: 10px;
@@ -117,3 +120,167 @@ header {
 }
 
 /* Início da Main */
+
+main {
+    background-image: url(/imagens/bg_main.png);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
+
+/* Sessão JOGAR */
+
+.jogar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Imagem JOGAR */
+
+.img_jogar {
+    width: 300px;
+    z-index: 11;
+    position: relative;
+    left: 5%;
+    margin-top: -50px;
+    
+}
+
+.img_jogar img {
+    width: 100%;
+}
+
+@media (max-width: 1028px){
+    .img_jogar {
+        width: 270px;
+    }
+}
+
+@media (max-width: 860px){
+    .img_jogar {
+        margin-top: 100px;
+        width: 227px;
+    }
+}
+
+/* Imagem SOBRE */
+
+.img_sobre {
+    width: 600px;
+    align-self: flex-end;
+}
+
+.img_sobre img {
+    width: 100%;
+}
+
+@media (max-width: 1028px){
+    .img_sobre{
+        width: 550px;
+    }
+}
+
+@media (max-width: 860px) {
+    .img_sobre {
+        display: none;
+    }
+}
+
+/* Imagem SOBRE Vertical */
+
+.img_sobre_vertical {
+    display: none;
+}
+
+@media (max-width: 860px) {
+    .jogar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img_sobre_vertical {
+        display: flex;
+        width: 300px;
+    }
+
+    .img_sobre_vertical img {
+        width: 100%;
+    }
+}
+
+/* Linha 1 */
+
+.linha-1 {
+    margin: 10px;
+    width: 45%;
+    position: relative;
+    left: 25%;
+}
+
+.linha-1 img {
+    width: 100%;
+}
+
+/* Configurações de Background Mobile */
+
+@media (max-width: 860px) {
+    .m-1 {
+        background-image: url(/imagens/bg_main.png);
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+    }
+    .m-2 {
+        background-color: white;
+    }
+}
+
+/* Sessão Estrutura */
+
+.estrutura {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Imagem SIFH */
+
+.sifh {
+    width: 500px;
+}
+
+.sifh img {
+    width: 100%;
+}
+
+/* Imagem ESTRUTURA */
+
+.img_estrutura {
+    width: 300px;
+    position: relative;
+    left: -10%;
+}
+
+.img_estrutura img {
+    width: 100%;
+}
+
+/* Imagem REY */
+
+.img_rey {
+    width: 250px;
+}
+
+.img_rey img {
+    width: 100%;
+}
+
+/* Sessão Atributos */
+
+.m3 {
+    background-image: url(/imagens/bg_m3.png);
+    width: 100%;
+}
+
+h2 {
+    color: white;
+}
