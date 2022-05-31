@@ -1,15 +1,21 @@
 /* Configurações Globais */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&family=Tiro+Devanagari+Hindi&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 /* Configuração da Header */
+
+body {
+    max-width: 1900px;
+}
 
 header {
     width: 100%;
@@ -18,17 +24,17 @@ header {
     background-repeat: no-repeat;
     display: flex;
     height: 600px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-@media (max-width: 1201px){
+@media (max-width: 1201px) {
     header {
         height: 500px;
     }
 }
 
-@media (max-width: 1201px){
+@media (max-width: 1201px) {
     header {
         height: 400px;
     }
@@ -37,30 +43,38 @@ header {
 /* Imagem Star */
 
 .img_star {
-    width: 530px;
-    position: relative;
-    left: 22%;
-    margin-top: 120px;
+    width: 330px;
+    position: absolute;
+    left: 18%;
+    margin-top: 90px;
 }
 
 .img_star img {
     width: 100%
 }
 
-@media (max-width: 1028px){
-    .img_star{
+@media(max-width: 1171px) {
+    .img_star {
+        width: 270px;
+    }
+}
+
+@media (max-width: 1028px) {
+    .img_star {
         margin-top: 80px;
+        left: 14%;
+        width: 270px;
     }
 }
 
 /* Imagem Kylo */
 
 .img_kylo {
-    width: 2850px;
-    height: 730px;
-    position: relative;
-    right: 2%;
-    margin-top: 120px;
+    width: 1000px;
+    height: 750px;
+    position: absolute;
+    left: 11.7%;
+    margin-top: 80px;
     z-index: 10;
 }
 
@@ -69,14 +83,27 @@ header {
     height: 100%;
 }
 
-@media (max-width: 1201px){
+@media(max-width: 1462px) {
+    .img_kylo {
+        width: 67%;
+    }
+}
+
+@media (max-width: 1201px) {
     .img_kylo {
         height: 630px;
     }
 }
 
-@media (max-width: 1028px){
+@media(max-width: 1171px) {
     .img_kylo {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1028px) {
+    .img_kylo {
+        width: 68%;
         height: 530px;
         margin-top: 80px;
     }
@@ -85,19 +112,33 @@ header {
 /* Imagem Wars */
 
 .img_wars {
-    width: 560px;
+    width: 360px;
     position: relative;
-    right: 15%;
-    margin-top: 120px;
+    left: 65%;
+    margin-top: 90px;
 }
 
 .img_wars img {
     width: 100%;
 }
 
-@media (max-width: 1028px){
+@media (max-width: 1503px) {
+    .img_wars {
+        left: 69%;
+    }
+}
+
+@media(max-width: 1171px) {
+    .img_wars {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1028px) {
     .img_wars {
         margin-top: 80px;
+        left: 65%;
+        width: 300px;
     }
 }
 
@@ -105,8 +146,8 @@ header {
 
 .img_legiao {
     position: relative;
-    right: 17%;
-    width: 200px;
+    left: -5%;
+    width: 100px;
     align-self: flex-end;
     margin-bottom: 10px;
 }
@@ -115,16 +156,14 @@ header {
     width: 100%;
 }
 
-@media (max-width: 1028px){
-    
-}
+@media (max-width: 1028px) {}
 
 /* Início da Main */
 
-main {
+.background-1-main {
     background-image: url(/imagens/bg_main.png);
     background-repeat: no-repeat;
-    background-size: 50% 100%;
+    background-size: 40% 100%;
 }
 
 /* Sessão JOGAR */
@@ -138,25 +177,46 @@ main {
 /* Imagem JOGAR */
 
 .img_jogar {
-    width: 300px;
+    width: 285px;
+    height: 450px;
     z-index: 11;
     position: relative;
     left: 5%;
     margin-top: -50px;
-    
+    background-image: url(/imagens/comece_jogar.png);
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 10px;
 }
 
-.img_jogar img {
-    width: 100%;
+.img_jogar h2 {
+    margin-top: 50px;
+    font-size: 3em;
 }
 
-@media (max-width: 1028px){
+.img_jogar p {
+    margin-top: 50px;
+    color: white;
+    text-align: start;
+}
+
+.img_jogar button {
+    background: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 1028px) {
     .img_jogar {
         width: 270px;
     }
 }
 
-@media (max-width: 860px){
+@media (max-width: 860px) {
     .img_jogar {
         margin-top: 100px;
         width: 227px;
@@ -174,8 +234,8 @@ main {
     width: 100%;
 }
 
-@media (max-width: 1028px){
-    .img_sobre{
+@media (max-width: 1028px) {
+    .img_sobre {
         width: 550px;
     }
 }
@@ -190,6 +250,7 @@ main {
 
 .img_sobre_vertical {
     display: none;
+    margin-top: 20px;
 }
 
 @media (max-width: 860px) {
@@ -230,8 +291,13 @@ main {
         background-size: 50% 100%;
         background-repeat: no-repeat;
     }
+
     .m-2 {
         background-color: white;
+    }
+
+    main {
+        background: none;
     }
 }
 
@@ -246,28 +312,64 @@ main {
 
 .sifh {
     width: 500px;
+    position: relative;
+    left: 10%;
 }
 
 .sifh img {
     width: 100%;
 }
 
-/* Imagem ESTRUTURA */
+/* ESTRUTURA */
 
 .img_estrutura {
-    width: 300px;
+    width: 330px;
     position: relative;
     left: -10%;
 }
 
-.img_estrutura img {
-    width: 100%;
+.img_estrutura h2 {
+    color: black;
+    font-weight: 100;
+    font-size: 2em;
+    text-align: right;
+}
+
+.img_estrutura ul {
+    margin-top: 25px;
+}
+
+.img_estrutura li {
+    text-align: right;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.img_estrutura li:hover {
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 891px) {
+    .img_estrutura {
+        width: 250px;
+    }
+
+    .img_estrutura h2 {
+        font-size: 1.5em;
+    }
+
+    .img_estrutura li {
+        font-size: 0.8em;
+    }
 }
 
 /* Imagem REY */
 
 .img_rey {
     width: 250px;
+    position: relative;
+    right: 10%
 }
 
 .img_rey img {
@@ -276,11 +378,295 @@ main {
 
 /* Sessão Atributos */
 
-.m3 {
-    background-image: url(/imagens/bg_m3.png);
+.m-3 {
+    background-color: rgb(60, 59, 59);
     width: 100%;
+    padding: 40px;
 }
 
 h2 {
     color: white;
+    margin-top: 80px;
+    align-self: right;
+}
+
+.atributos {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.imagens_menores {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Primeira imagem */
+
+.img_atributo_1 {
+    position: relative;
+    width: 700px;
+    height: 370px;
+    background-image: url(imagens/img_atributo_1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img_1_atr {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.oculto_1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: rgb(154, 42, 42);
+    padding: 50px;
+}
+
+.oculto_1 h3 {
+    color: white;
+}
+
+.oculto_1 p {
+    color: white;
+}
+
+.oculto_1 button {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    margin-top: 25%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.oculto_1:hover {
+    opacity: 0.7;
+}
+
+/* Segunda Imagem */
+
+.img_atributo_2 {
+    position: relative;
+    width: 320px;
+    height: 185px;
+    display: flex;
+    background-image: url(imagens/img_atributo_2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img_2_atr {
+    width: 100%;
+    height: auto;
+}
+
+.oculto_2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: rgb(154, 42, 42);
+    padding: 10px;
+}
+
+.oculto_2 h3 {
+    color: white;
+}
+
+.oculto_2 p {
+    color: white;
+}
+
+.oculto_2 button {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    margin-top: 5%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.oculto_2:hover {
+    opacity: 0.7;
+    border: 2px solid white;
+}
+
+/* Terceira Imagem */
+
+.img_atributo_3 {
+    position: relative;
+    width: 320px;
+    height: 185px;
+    display: flex;
+    background-image: url(imagens/img_atributo_3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img_3_atr {
+    width: 100%;
+    height: auto;
+}
+
+.oculto_3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: rgb(154, 42, 42);
+    padding: 10px;
+}
+
+.oculto_3 h3 {
+    color: white;
+}
+
+.oculto_3 p {
+    color: white;
+}
+
+.oculto_3 button {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    margin-top: 5%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.oculto_3:hover {
+    opacity: 0.7;
+    border: 2px solid white;
+}
+
+/* Quarta Imagem */
+
+.img_atributo_4 {
+    position: relative;
+    width: 320px;
+    height: 185px;
+    display: flex;
+    background-image: url(imagens/img_atributo_4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img_4_atr {
+    width: 100%;
+    height: auto;
+}
+
+.oculto_4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: rgb(154, 42, 42);
+    padding: 10px;
+}
+
+.oculto_4 h3 {
+    color: white;
+}
+
+.oculto_4 p {
+    color: white;
+}
+
+.oculto_4 button {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    margin-top: 5%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.oculto_4:hover {
+    opacity: 0.7;
+    border: 2px solid white;
+}
+
+/* Quinta Imagem */
+
+.img_atributo_5 {
+    position: relative;
+    width: 320px;
+    height: 185px;
+    display: flex;
+    background-image: url(imagens/img_atributo_5.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img_5_atr {
+    width: 100%;
+    height: auto;
+}
+
+.oculto_5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: rgb(154, 42, 42);
+    padding: 10px;
+}
+
+.oculto_5 h3 {
+    color: white;
+}
+
+.oculto_5 p {
+    color: white;
+}
+
+.oculto_5 button {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    margin-top: 5%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.oculto_5:hover {
+    opacity: 0.7;
+    border: 2px solid white;
+}
+
+/* Hierarquia */
+
+.hierarquia {
+    width: 95%;
+    position: relative;
+    left: 2%;
+    text-align: right;
+}
+
+.hierarquia img {
+    width: 100%;
+}
+
+figcaption {
+    width: 50%;
+    color: white;
+    text-align: right;
+    position: relative;
+    left: 50%;
 }
