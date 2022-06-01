@@ -40,6 +40,12 @@ header {
     }
 }
 
+@media (max-width: 760px) {
+    header {
+        height: 300px;
+    }
+}
+
 /* Imagem Star */
 
 .img_star {
@@ -64,6 +70,24 @@ header {
         margin-top: 80px;
         left: 14%;
         width: 270px;
+    }
+}
+
+@media (max-width: 860px){
+    .img_star {
+        width: 230px;
+    }
+}
+
+@media (max-width: 760px) {
+    .img_star {
+        width: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    .img_star {
+        width: 150px;
     }
 }
 
@@ -108,6 +132,11 @@ header {
         margin-top: 80px;
     }
 }
+@media (max-width: 760px) {
+    .img_kylo {
+        height: 350px;
+    }
+}
 
 /* Imagem Wars */
 
@@ -142,6 +171,24 @@ header {
     }
 }
 
+@media (max-width: 860px) {
+    .img_wars {
+        width: 260px;
+    }
+}
+
+@media (max-width: 760px) {
+    .img_wars {
+        width: 240px;
+    }
+}
+
+@media (max-width: 700px) {
+    .img_wars {
+        width: 190px;
+    }
+}
+
 /* Imagem Legião */
 
 .img_legiao {
@@ -156,7 +203,17 @@ header {
     width: 100%;
 }
 
-@media (max-width: 1028px) {}
+@media (max-width: 1028px) {
+    .img_legiao {
+        width: 80px;
+    }
+}
+
+@media (max-width: 860px) {
+    .img_legiao {
+        width: 60px;
+    }
+}
 
 /* Início da Main */
 
@@ -320,12 +377,19 @@ header {
     width: 100%;
 }
 
+@media (max-width: 700px) {
+    .sifh {
+        left: 2%;
+    }
+}
+
 /* ESTRUTURA */
 
 .img_estrutura {
     width: 330px;
     position: relative;
     left: -10%;
+    margin-top: 20px;
 }
 
 .img_estrutura h2 {
@@ -333,10 +397,6 @@ header {
     font-weight: 100;
     font-size: 2em;
     text-align: right;
-}
-
-.img_estrutura ul {
-    margin-top: 25px;
 }
 
 .img_estrutura li {
@@ -364,6 +424,30 @@ header {
     }
 }
 
+@media (max-width: 860px) {
+    .img_estrutura {
+        width: 200px;
+    }
+
+    .img_estrutura h2 {
+        margin: 0;
+    }
+
+    .img_estrutura li {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 640px) {
+    .img_estrutura h2 {
+        font-size: 1em;
+    }
+
+    .img_estrutura li {
+        font-size: 0.7em;
+    }
+}
+
 /* Imagem REY */
 
 .img_rey {
@@ -376,12 +460,19 @@ header {
     width: 100%;
 }
 
+@media (max-width: 700px) {
+    .img_rey {
+        right: 2%;
+    }
+}
+
 /* Sessão Atributos */
 
 .m-3 {
     background-color: rgb(60, 59, 59);
     width: 100%;
     padding: 40px;
+    padding-bottom: 300px;
 }
 
 h2 {
@@ -454,6 +545,13 @@ h2 {
     opacity: 0.7;
 }
 
+@media (max-width: 1130px) {
+    .img_atributo_1 {
+        width: 600px;
+        height: 270px;
+    }
+}
+
 /* Segunda Imagem */
 
 .img_atributo_2 {
@@ -501,6 +599,13 @@ h2 {
 .oculto_2:hover {
     opacity: 0.7;
     border: 2px solid white;
+}
+
+@media (max-width: 1130px) {
+    .img_atributo_2 {
+        width: 220px;
+        height: 135px;
+    }
 }
 
 /* Terceira Imagem */
@@ -552,6 +657,13 @@ h2 {
     border: 2px solid white;
 }
 
+@media (max-width: 1130px) {
+    .img_atributo_3 {
+        width: 220px;
+        height: 135px;
+    }
+}
+
 /* Quarta Imagem */
 
 .img_atributo_4 {
@@ -599,6 +711,13 @@ h2 {
 .oculto_4:hover {
     opacity: 0.7;
     border: 2px solid white;
+}
+
+@media (max-width: 1130px) {
+    .img_atributo_4 {
+        width: 220px;
+        height: 135px;
+    }
 }
 
 /* Quinta Imagem */
@@ -650,6 +769,97 @@ h2 {
     border: 2px solid white;
 }
 
+@media (max-width: 1130px) {
+    .img_atributo_5 {
+        width: 220px;
+        height: 135px;
+    }
+}
+
+/* Atributos MOBILE */
+
+
+@media (max-width: 880px) {
+    .atributos {
+        display: block;
+    }
+    .imagens_menores {
+        display: block;
+    }
+
+    .img_atributo_1 {
+        width: 420px;
+        height: 235px;
+    }
+
+    .oculto_1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 0.5s;
+        background-color: rgb(154, 42, 42);
+        padding: 10px;
+        border: 2px solid white;
+    }
+
+    .img_atributo_2 {
+        width: 420px;
+        height: 235px;
+    }
+
+    .oculto_2 button {
+        background: none;
+        color: white;
+        border: 2px solid white;
+        margin-top: 25%;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .img_atributo_3 {
+        width: 420px;
+        height: 235px;
+    }
+
+    .oculto_3 button {
+        background: none;
+        color: white;
+        border: 2px solid white;
+        margin-top: 25%;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .img_atributo_4 {
+        width: 420px;
+        height: 235px;
+    }
+
+    .oculto_4 button {
+        background: none;
+        color: white;
+        border: 2px solid white;
+        margin-top: 25%;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .img_atributo_5 {
+        width: 420px;
+        height: 235px;
+    }
+
+    .oculto_5 button {
+        background: none;
+        color: white;
+        border: 2px solid white;
+        margin-top: 25%;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
 /* Hierarquia */
 
 .hierarquia {
@@ -669,4 +879,239 @@ figcaption {
     text-align: right;
     position: relative;
     left: 50%;
+    font-weight: 100;
+}
+
+/* Quarta parte da MAIN */
+.titulo_2 {
+    margin-top: -300px;
+    margin-bottom: 250px;
+    text-align: center;
+}
+
+.titulo_2 h2 {
+    font-size: 3em;
+}
+
+.m-4 {
+    width: 100%;
+    text-align: center;
+}
+
+.m-4 h2 {
+    font-size: 3em;
+}
+
+@media (max-width: 974px) {
+    .m-4 h2 {
+        font-size: 2.5em;
+    }
+}
+
+.final_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storm_trooper {
+    width: 40%;
+    margin-top: -160px;
+    margin-right: 40px;
+}
+
+.storm_trooper img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 974px) {
+    .storm_trooper{
+        width: 400px;
+    }
+}
+
+@media (max-width: 669px) {
+
+}
+
+.imgs_main_final {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Passos */
+
+.passo_1 {
+    width: 200px;
+}
+
+.passo_1 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 3em;
+}
+
+.passo_1 button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.passo_1:hover button{
+    background:rgb(154, 42, 42);
+}
+
+.passo_1 p {
+    margin: 0;
+}
+
+.passo_2 {
+    width: 200px;
+}
+
+.passo_2 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 3em;
+}
+
+.passo_2 button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.passo_2:hover button{
+    background:rgb(154, 42, 42);
+}
+
+.passo_2 p {
+    margin: 0;
+}
+
+.passo_3 {
+    width: 200px;
+}
+
+.passo_3 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 3em;
+}
+
+.passo_3 button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.passo_3:hover button {
+    background:rgb(154, 42, 42);
+}
+
+.passo_3 p {
+    margin: 0;
+}
+
+/* Responsividade dos Passos e Imagem */
+
+@media (max-width: 937px) {
+
+}
+
+/* Início FOOTER (finalmente MDS) */
+footer {
+    display: flex;
+}
+
+.app {
+    background-color: #FF5A56;
+    color: white;
+    width: 65%;
+    padding: 100px;
+}
+
+@media (max-width: 883px) {
+    .app {
+        padding: 50px;
+    }
+}
+
+.app h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+@media (max-width: 883px) {
+    .app h2 {
+        font-size: 2.5em;
+    }
+}
+
+.app p {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.link_apps {
+    display: flex;
+}
+
+.link_apps img {
+    width: 200px;
+}
+
+@media (max-width: 883px) {
+    .link_apps img {
+        width: 150px;
+    }
+}
+
+.linha_footer {
+    width: 100%;
+    height: 1px;
+    border: 2px solid #D74430;
+    background-color: #D74430;
+    margin: 20px;
+}
+
+@media (max-width: 883px) {
+    .linha_footer {
+        width: 90%;
+    }
+}
+
+@media(max-width: 883px) {
+    .final_footer img {
+        width: 200px;
+    }
+}
+
+.darth_vader {
+    width: 40%;
+    position: relative;
+    left: -12%;
+    margin-top: -5%;
+}
+
+.darth_vader img {
+    width: 100%;
 }
