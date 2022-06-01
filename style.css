@@ -569,14 +569,16 @@ h2 {
 }
 
 .atributos {
-    display: flex;
-    justify-content: center;
     margin-top: 40px;
-    display: flex;
-    justify-content: center;
     width: 100%;
     margin-bottom: 20px;
     padding: 30px;
+    display: flex;
+}
+
+.imagem_maior {
+    width: 650px;
+    height: 370px;
 }
 
 .imagens_menores {
@@ -584,11 +586,20 @@ h2 {
     flex-wrap: wrap;
 }
 
+@media (max-width: 1431px) {
+    .atributos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /* Primeira imagem */
 
 .img_atributo_1 {
-    position: relative;
-    width: 700px;
+    width: 650px;
     height: 370px;
     background-image: url(imagens/img_atributo_1.png);
     background-size: 100% 100%;
@@ -597,14 +608,14 @@ h2 {
 
 .img_1_atr {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 650px;
+    height: 370px;
 }
 
 .oculto_1 {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 650px;
+    height: 370px;
     opacity: 0;
     transition: 0.5s;
     background-color: rgb(154, 42, 42);
@@ -632,12 +643,24 @@ h2 {
     opacity: 0.7;
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1431px)  {
+    .imagem_maior {
+        width: 640px;
+    }
+
     .img_atributo_1 {
-        width: 600px;
-        height: 270px;
+        width: 640px;
+    }
+
+    .oculto_1 {
+        width: 640px;
+    }
+
+    .imagens_menores {
+        width: 650px;
     }
 }
+
 
 /* Segunda Imagem */
 
@@ -686,13 +709,6 @@ h2 {
 .oculto_2:hover {
     opacity: 0.7;
     border: 2px solid white;
-}
-
-@media (max-width: 1130px) {
-    .img_atributo_2 {
-        width: 220px;
-        height: 135px;
-    }
 }
 
 /* Terceira Imagem */
@@ -744,12 +760,6 @@ h2 {
     border: 2px solid white;
 }
 
-@media (max-width: 1130px) {
-    .img_atributo_3 {
-        width: 220px;
-        height: 135px;
-    }
-}
 
 /* Quarta Imagem */
 
@@ -800,12 +810,6 @@ h2 {
     border: 2px solid white;
 }
 
-@media (max-width: 1130px) {
-    .img_atributo_4 {
-        width: 220px;
-        height: 135px;
-    }
-}
 
 /* Quinta Imagem */
 
@@ -856,13 +860,6 @@ h2 {
     border: 2px solid white;
 }
 
-@media (max-width: 1130px) {
-    .img_atributo_5 {
-        width: 220px;
-        height: 135px;
-    }
-}
-
 /* Atributos MOBILE */
 
 
@@ -870,6 +867,12 @@ h2 {
     .atributos {
         display: block;
     }
+
+    .imagem_maior {
+        width: 420px;
+        height: 235px;
+    }
+
     .imagens_menores {
         display: block;
     }
@@ -879,10 +882,15 @@ h2 {
         height: 235px;
     }
 
+    .img_1_atr {
+        width: 420px;
+        height: 235px;
+    }
+
     .oculto_1 {
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 420px;
+        height: 235px;
         opacity: 0;
         transition: 0.5s;
         background-color: rgb(154, 42, 42);
@@ -948,8 +956,17 @@ h2 {
 }
 
 @media (max-width: 549px) {
+    .imagem_maior {
+        width: 100%;
+    }
+
     .img_atributo_1 {
         width: 100%;
+    }
+
+    .img_1_atr {
+        width: 100%;
+        height: auto;
     }
 
     .img_atributo_1 button {
@@ -990,7 +1007,16 @@ h2 {
 }
 
 @media (max-width: 446px) {
+
+    .imagem_maior {
+        height: 180px;
+    }
+
     .img_atributo_1 {
+        height: 180px;
+    }
+
+    .oculto_1 {
         height: 180px;
     }
 
@@ -1035,8 +1061,8 @@ figcaption {
 
 /* Quarta parte da MAIN */
 .titulo_2 {
-    margin-top: -300px;
-    margin-bottom: 250px;
+    margin-top: 100px;
+    margin-bottom: -150px;
     text-align: center;
 }
 
@@ -1044,13 +1070,15 @@ figcaption {
     font-size: 3em;
 }
 
+@media (max-width: 669px) {
+    .titulo_2 {
+        margin-bottom: -250px;
+    }
+}
+
 .m-4 {
     width: 100%;
     text-align: center;
-}
-
-.m-4 h2 {
-    font-size: 3em;
 }
 
 @media (max-width: 974px) {
@@ -1066,9 +1094,10 @@ figcaption {
 }
 
 .storm_trooper {
-    width: 40%;
-    margin-top: -160px;
+    width: 400px;
+    margin-top: -260px;
     margin-right: 40px;
+    height: auto;
 }
 
 .storm_trooper img {
@@ -1083,7 +1112,9 @@ figcaption {
 }
 
 @media (max-width: 669px) {
-
+    .storm_trooper {
+        margin-top: 0;
+    }
 }
 
 .imgs_main_final {
