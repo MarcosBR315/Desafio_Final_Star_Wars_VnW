@@ -966,7 +966,7 @@ figcaption {
     cursor: pointer;
 }
 
-.passo_1:hover button{
+.passo_1 button:hover{
     background:rgb(154, 42, 42);
 }
 
@@ -991,16 +991,15 @@ figcaption {
     border: none;
     padding: 10px;
     transition: 0.5s ease;
-    margin-bottom: 20px;
     cursor: pointer;
 }
 
-.passo_2:hover button{
+.passo_2 button:hover{
     background:rgb(154, 42, 42);
 }
 
 .passo_2 p {
-    margin: 0;
+    margin-top: 20px;
 }
 
 .passo_3 {
@@ -1024,7 +1023,7 @@ figcaption {
     cursor: pointer;
 }
 
-.passo_3:hover button {
+.passo_3 button:hover {
     background:rgb(154, 42, 42);
 }
 
