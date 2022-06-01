@@ -11,6 +11,11 @@
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Configuração da Header */
 
 body {
@@ -43,6 +48,12 @@ header {
 @media (max-width: 760px) {
     header {
         height: 300px;
+    }
+}
+
+@media (max-width: 549px) {
+    header {
+        height: 200px;
     }
 }
 
@@ -91,6 +102,20 @@ header {
     }
 }
 
+@media (max-width: 549px) {
+    .img_star {
+        width: 110px;
+        margin-top: 60px;
+        left: 18%;
+    }
+}
+
+@media (max-width: 386px) {
+    .img_star {
+        left: 10%;
+    }
+}
+
 /* Imagem Kylo */
 
 .img_kylo {
@@ -135,6 +160,13 @@ header {
 @media (max-width: 760px) {
     .img_kylo {
         height: 350px;
+    }
+}
+
+@media (max-width: 549px) {
+    .img_kylo {
+        height: 300px;
+        margin-top: 50px;
     }
 }
 
@@ -189,6 +221,20 @@ header {
     }
 }
 
+@media (max-width: 549px) {
+    .img_wars {
+        width: 120px;
+        margin-top: 60px;
+        left: 68%;
+    }
+}
+
+@media (max-width: 386px) {
+    .img_wars {
+        left: 65%;
+    }
+}
+
 /* Imagem Legião */
 
 .img_legiao {
@@ -212,6 +258,21 @@ header {
 @media (max-width: 860px) {
     .img_legiao {
         width: 60px;
+    }
+}
+
+@media (max-width: 549px) {
+    .img_legiao {
+        position: absolute;
+        left: 80%;
+        top: 200px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 420px) {
+    .img_legiao {
+        top: 200px;
     }
 }
 
@@ -280,6 +341,26 @@ header {
     }
 }
 
+@media (max-width: 549px) {
+    .img_jogar {
+        height: 320px;
+        margin-top: 70px;
+    }
+
+    .img_jogar h2 {
+        font-size: 2em;
+        margin-top: 30px;
+    }
+
+    .img_jogar p {
+        margin-top: 20px;
+    }
+
+    .img_jogar button {
+        margin: 20px;
+    }
+}
+
 /* Imagem SOBRE */
 
 .img_sobre {
@@ -324,6 +405,12 @@ header {
 
     .img_sobre_vertical img {
         width: 100%;
+    }
+}
+
+@media (max-width: 549px) {
+    .img_sobre_vertical {
+        width: 200px;
     }
 }
 
@@ -860,6 +947,70 @@ h2 {
     }
 }
 
+@media (max-width: 549px) {
+    .img_atributo_1 {
+        width: 100%;
+    }
+
+    .img_atributo_1 button {
+        margin-top: 5%;
+    }
+
+    .img_atributo_2 {
+        width: 100%;
+    }
+
+    .img_atributo_2 button {
+        margin-top: 5%;
+    }
+
+    .img_atributo_3 {
+        width: 100%;
+    }
+
+    .img_atributo_3 button {
+        margin-top: 5%;
+    }
+
+    .img_atributo_4 {
+        width: 100%;
+    }
+
+    .img_atributo_4 button {
+        margin-top: 5%;
+    }
+
+    .img_atributo_5 {
+        width: 100%;
+    }
+
+    .img_atributo_5 button {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 446px) {
+    .img_atributo_1 {
+        height: 180px;
+    }
+
+    .img_atributo_2 {
+        height: 180px;;
+    }
+
+    .img_atributo_3 {
+        height: 180px;
+    }
+
+    .img_atributo_4 {
+        height: 180px;
+    }
+
+    .img_atributo_5 {
+        height: 180px;;
+    }
+}
+
 /* Hierarquia */
 
 .hierarquia {
@@ -1031,12 +1182,6 @@ figcaption {
     margin: 0;
 }
 
-/* Responsividade dos Passos e Imagem */
-
-@media (max-width: 937px) {
-
-}
-
 /* Início FOOTER (finalmente MDS) */
 footer {
     display: flex;
@@ -1087,6 +1232,12 @@ footer {
     }
 }
 
+@media (max-width: 367px) {
+    .link_apps img {
+        width: 120px;
+    }
+}
+
 .g_play {
     cursor: pointer;
     margin-right: 10px;
@@ -1125,4 +1276,21 @@ footer {
 
 .darth_vader img {
     width: 100%;
+}
+
+/* Responsividade da FOOTER */
+
+@media (max-width: 880px) {
+    .app {
+        width: 100%
+    }
+
+    footer {
+        display: block;
+    }
+
+    .darth_vader {
+        left: 40%;
+        margin-top: -80px;
+    }
 }
