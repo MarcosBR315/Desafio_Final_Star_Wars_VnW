@@ -963,6 +963,7 @@ figcaption {
     padding: 10px;
     transition: 0.5s ease;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .passo_1:hover button{
@@ -991,6 +992,7 @@ figcaption {
     padding: 10px;
     transition: 0.5s ease;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .passo_2:hover button{
@@ -1019,6 +1021,7 @@ figcaption {
     padding: 10px;
     transition: 0.5s ease;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .passo_3:hover button {
@@ -1083,6 +1086,15 @@ footer {
     .link_apps img {
         width: 150px;
     }
+}
+
+.g_play {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.app_s {
+    cursor: pointer;
 }
 
 .linha_footer {
