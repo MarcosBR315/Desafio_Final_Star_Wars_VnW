@@ -657,7 +657,7 @@ h2 {
     }
 
     .imagens_menores {
-        width: 650px;
+        width: 640px;
     }
 }
 
@@ -957,7 +957,7 @@ h2 {
 
 @media (max-width: 549px) {
     .imagem_maior {
-        width: 100%;
+        width: 400px;
     }
 
     .img_atributo_1 {
@@ -974,7 +974,7 @@ h2 {
     }
 
     .img_atributo_2 {
-        width: 100%;
+        width: 400px;
     }
 
     .img_atributo_2 button {
@@ -982,7 +982,7 @@ h2 {
     }
 
     .img_atributo_3 {
-        width: 100%;
+        width: 400px;
     }
 
     .img_atributo_3 button {
@@ -990,7 +990,7 @@ h2 {
     }
 
     .img_atributo_4 {
-        width: 100%;
+        width: 400px;
     }
 
     .img_atributo_4 button {
@@ -998,7 +998,7 @@ h2 {
     }
 
     .img_atributo_5 {
-        width: 100%;
+        width: 400px;
     }
 
     .img_atributo_5 button {
