@@ -955,17 +955,31 @@ h2 {
     }
 }
 
-@media (max-width: 549px) {
+@media (max-width: 734px) {
+    .atributos {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
     .imagem_maior {
-        width: 400px;
+        width: 80.5vw;
+    }
+
+    .imagens_menores {
+        width: 80.5vw;
     }
 
     .img_atributo_1 {
-        width: 100%;
+        width: 80.5vw;
+    }
+
+    .oculto_1 {
+        width: 80.5vw;
     }
 
     .img_1_atr {
-        width: 100%;
+        width: 80.5vw;
         height: auto;
     }
 
@@ -974,7 +988,7 @@ h2 {
     }
 
     .img_atributo_2 {
-        width: 400px;
+        width: 80.5vw;
     }
 
     .img_atributo_2 button {
@@ -982,7 +996,7 @@ h2 {
     }
 
     .img_atributo_3 {
-        width: 400px;
+        width: 80.5vw;
     }
 
     .img_atributo_3 button {
@@ -990,7 +1004,7 @@ h2 {
     }
 
     .img_atributo_4 {
-        width: 400px;
+        width: 80.5vw;
     }
 
     .img_atributo_4 button {
@@ -998,7 +1012,7 @@ h2 {
     }
 
     .img_atributo_5 {
-        width: 400px;
+        width: 80.5vw;
     }
 
     .img_atributo_5 button {
@@ -1017,23 +1031,28 @@ h2 {
     }
 
     .oculto_1 {
+        width: 71.5vw;
         height: 180px;
     }
 
     .img_atributo_2 {
-        height: 180px;;
+        width: 71.5vw;
+        height: 180px;
     }
 
     .img_atributo_3 {
+        width: 71.5vw;
         height: 180px;
     }
 
     .img_atributo_4 {
+        width: 71.5vw;
         height: 180px;
     }
 
     .img_atributo_5 {
-        height: 180px;;
+        width: 71.5vw;
+        height: 180px;
     }
 }
 
